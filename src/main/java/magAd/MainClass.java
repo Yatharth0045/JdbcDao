@@ -31,7 +31,7 @@ public class MainClass {
         System.out.println("\nRetrieve\n");
 
         //retrieve
-        s = dao.getStudent(8);
+        s = dao.getStudent(4);
         System.out.println("Retrieve student : " + s.getName());
 
 //        System.out.println("\nUpdate\n");
