@@ -20,11 +20,13 @@ public class MainClass {
             System.out.println(std.getId() + " -- " + std.getName());
         }
 
-        System.out.println("\nInsert\n");
 
-        //insertion
-        Student s2 = new Student(2, "Sanju baby");
-        dao.addStudent(s2);
+//
+//        System.out.println("\nInsert\n");
+//
+//        //insertion
+//        Student s2 = new Student(3, "Bachan");
+//        dao.addStudent(s2);
 
         System.out.println("\nRetrieve\n");
 
@@ -32,17 +34,18 @@ public class MainClass {
         s = dao.getStudent(8);
         System.out.println("Retrieve student : " + s.getName());
 
-        System.out.println("\nUpdate\n");
+//        System.out.println("\nUpdate\n");
+//
+//        //update
+//        dao.updateStudent(5, "Mayank");
+//        s = dao.getStudent(5);
+//        name = s.getName();
+//        System.out.println("Updated student : " + name);
 
-        //update
-        dao.updateStudent(5, "Mayank");
-        s = dao.getStudent(5);
-        name = s.getName();
-        System.out.println("Updated student : " + name);
 
-        System.out.println("\nDelete\n");
-
-        //delete
-        dao.deleteStudent(8);
+//        System.out.println("\nDelete\n");
+//
+//        //delete
+//        dao.deleteStudent(8);
     }
 }

@@ -12,7 +12,7 @@ public class JConnection {
     static final String PASSWORD="postgres";
     Connection connection;
 
-    public static JConnection jConnection=new JConnection();
+    static JConnection jConnection=new JConnection();
 
     private JConnection(){
         try {
@@ -32,5 +32,12 @@ public class JConnection {
             e.printStackTrace();
         }
         return connection;
+    }
+    public void closeConnection(Connection connection){
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
