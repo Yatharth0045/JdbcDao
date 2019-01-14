@@ -23,7 +23,7 @@ public class MainClass {
         System.out.println("\nInsert\n");
 
         //insertion
-        Student s2 = new Student(9, "Megha");
+        Student s2 = new Student(2, "Sanju baby");
         dao.addStudent(s2);
 
         System.out.println("\nRetrieve\n");
@@ -43,6 +43,6 @@ public class MainClass {
         System.out.println("\nDelete\n");
 
         //delete
-        dao.deleteStudent(3);
+        dao.deleteStudent(8);
     }
 }
